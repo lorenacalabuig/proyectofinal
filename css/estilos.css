@@ -1,0 +1,177 @@
+.contenedor_principal {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#navegador {
+  height: 90px;
+  background-color: #99d1a89c;
+  text-align: center; }
+
+#navegador ul {
+  list-style: none;
+  display: inline-block;
+  padding: 18px; }
+
+#navegador ul li {
+  float: left;
+  margin-top: 10px; }
+
+#navegador ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 9px; }
+
+#navegador ul li a:hover {
+  background-color: #80a589; }
+
+h2 {
+  margin-top: 20px;
+  color: #99d1a8;
+  font-family: 'Texturina';
+  text-align: center; }
+
+/* PAGINA PRINCIPAL */
+.contenedor_imagen_home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/ingredientes-naturales.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.parrafo_principal {
+  margin-top: 150px;
+  padding: 20px;
+  text-align: center;
+  color: #d4c9c9; }
+
+.footer_principal {
+  height: 25px;
+  margin-top: 400px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.158);
+  color: #d4c9c9; }
+
+/* TERMINA */
+body p {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 17px; }
+
+footer {
+  margin-top: 1px;
+  text-align: center; }
+
+/* NOSOTROS */
+.propiedades_conocer {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "propiedades_conocer"; }
+  .propiedades_conocer p {
+    text-align: left;
+    background-color: #99d1a89c; }
+
+.footer_nosotros {
+  height: 25px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.158);
+  color: #d4c9c9; }
+
+.footer_productos {
+  height: 25px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.158);
+  color: #d4c9c9; }
+
+form {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-left: 0px;
+  padding: 20px; }
+
+label {
+  font-size: 12px;
+  display: block;
+  width: 100%; }
+
+textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; }
+
+input, textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; }
+
+input:focus, textarea:focus {
+  border: 1px solid #1668C4; }
+
+input[type="submit"] {
+  margin-bottom: 0;
+  background: #1668C4;
+  color: #fff;
+  border: none; }
+
+input[type="submit"]:hover {
+  background: #4A88F4;
+  cursor: pointer; }
+
+.como_comprar p {
+  text-align: center;
+  background-color: #99d1a89c;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 1vw; }
+
+.propiedades_contactanos {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "propiedades_conocer"; }
+  .propiedades_contactanos p {
+    text-align: right;
+    background-color: #99d1a89c;
+    float: right; }
+
+#carouselExampleControls {
+  margin-left: 25%;
+  margin-right: 25%; }
+
+.foto {
+  float: right;
+  width: 20%;
+  height: auto;
+  padding-right: 30px; }
+
+.contenedor {
+  width: 100%;
+  height: auto;
+  padding: 30px; }
+
+@media all and (max-width: 960px) {
+  #navegador ul li a {
+    font-size: 2.5vw; } }
