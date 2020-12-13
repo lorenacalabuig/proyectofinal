@@ -1,3 +1,26 @@
+$conocenos: contacto;
+
+h2 {
+    @if $conocenos == contacto {
+        padding: 20px;
+        margin-bottom: 20px;
+        color:#99d1a8;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+    }
+    @else if $conocenos == productos {
+        margin-top: 5px;
+        color: red;
+        font-family: 'Comic Sans';
+        text-align: left;
+    }
+    @else {
+        margin-top:100px;
+        color:black;
+        font-family: serif;
+        text-align: right;
+    }
+}
 .contenedor_principal {
     width: 100%;
     max-width: 1000px;
@@ -46,12 +69,6 @@
         }
     }
 }
-h2 {
-    margin-top: 20px;
-    color:#99d1a8;
-    font-family: 'Texturina';
-    text-align: center;
-}
 /* PAGINA PRINCIPAL */
 .contenedor_imagen_home {
     width: 100%;
@@ -67,25 +84,15 @@ h2 {
     text-align: center;
     color: rgb(212, 201, 201);
 }
-.footer_principal {
-    height: 25px;
-    margin-top: 400px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.158);
-    color: rgb(212, 201, 201);
-}
 /* TERMINA */
 body {
     p {
+        font-family: 'Montserrat';
         margin: 20px;
         padding: 20px;
         text-align: center;
         font-size: 17px;
     }
-}
-footer {
-    margin-top: 1px;
-    text-align: center;
 }
 /* NOSOTROS */
 .propiedades_conocer {
@@ -102,28 +109,14 @@ footer {
         background-color: #99d1a89c;
     }
 }
-.footer_nosotros {
-    height: 25px;
-    margin-top: 150px;
-    margin-bottom: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.158);
-    color: rgb(212, 201, 201);
-}
-.footer_productos {       
-    height: 25px;
-    margin-top: 150px;
-    margin-bottom: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.158);
-    color: rgb(212, 201, 201);
-}
 form {
-    width: 100%;
-    border: 1px solid #ccc;
+    width: 450px;
+    margin: auto;
     margin-top: 20px;
-    margin-left: 0px;
-    padding: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-bottom: 150px;
 }
 label {
     font-size: 12px;
@@ -163,7 +156,6 @@ input[type="submit"]:hover{
         background-color: #99d1a89c;
         margin-left: 30%;
         margin-right: 30%;
-        font-size: 1vw;
     }
 }
 .propiedades_contactanos {
@@ -196,7 +188,13 @@ input[type="submit"]:hover{
     height: auto;
     padding: 30px;
 }
-
+footer {
+    align-self: flex-end;
+    background-color: #99d1a89c;
+    line-height: 3;
+    text-align: center;
+    width: 100%;
+}
 
 @media all and (max-width: 960px) {
     #navegador {
